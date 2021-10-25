@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,19 +23,101 @@
     <title>Work Day Scheduler</title>
   </head>
 
-  <body>
+<body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+        <h1 class="display-3">Work Day Scheduler</h1>
+        <p class="lead">A simple calendar app for scheduling your work day</p>
+        <p class="lead">The date and time today is</p>
+        <p id="currentDay" class="lead"></p>
     </header>
+
     <div class="container">
-      <!-- Timeblocks go here -->
-      <div id="time-block">Test</div>
-      
+        <!-- 9AM -->
+        <div class="input-group input-group-lg" data-hour="9">
+            <div class="input-group-prepend">
+                <div class="input-group-text time-block block1"></div>
+            </div>
+            <input type="text" class="form-control form9" aria-label="Large">
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+        </div>
+
+        <!-- 10AM -->
+        <div class="input-group input-group-lg" data-hour="10">
+            <div class="input-group-prepend">
+                <div class="input-group-text time-block block2"></div>
+            </div>
+            <input type="text" class="form-control form10" aria-label="Large">
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+        </div>
+
+        <!-- 11AM -->
+        <div class="input-group input-group-lg" data-hour="11">
+            <div class="input-group-prepend">
+                <div class="input-group-text time-block block3"></div>
+            </div>
+            <input type="text" class="form-control form11" aria-label="Large">
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+        </div>
+
+        <!-- 12PM -->
+        <div class="input-group input-group-lg" data-hour="12">
+            <div class="input-group-prepend">
+                <div class="input-group-text time-block block4"></div>
+            </div>
+            <input type="text" class="form-control form12" aria-label="Large">
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+        </div>
+
+        <!-- 1PM -->
+        <div class="input-group input-group-lg" data-hour="1">
+            <div class="input-group-prepend">
+                <div class="input-group-text time-block block5"></div>
+            </div>
+            <input type="text" class="form-control form1" aria-label="Large">
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+        </div>
+
+        <!-- 2PM -->
+        <div class="input-group input-group-lg" data-hour="2">
+            <div class="input-group-prepend">
+                <div class="input-group-text time-block block6"></div>
+            </div>
+            <input type="text" class="form-control form2" aria-label="Large">
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+        </div>
+
+        <!-- 3PM -->
+        <div class="input-group input-group-lg" data-hour="3">
+            <div class="input-group-prepend">
+                <div class="input-group-text time-block block7"></div>
+            </div>
+            <input type="text" class="form-control form3" aria-label="Large">
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+        </div>
+
+        <!-- 4PM -->
+        <div class="input-group input-group-lg" data-hour="4">
+            <div class="input-group-prepend">
+                <div class="input-group-text time-block block8"></div>
+            </div>
+            <input type="text" class="form-control form4" aria-label="Large">
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+        </div>
+
+        <!-- 5PM -->
+        <div class="input-group input-group-lg" data-hour="5">
+            <div class="input-group-prepend">
+                <div class="input-group-text time-block block9"></div>
+            </div>
+            <input type="text" class="form-control form5" aria-label="Large">
+            <button class="btn saveBtn"><i class="far fa-save"></i></button>
+        </div>
     </div>
 
+    <!-- Jquery and Moment JS links-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
+
 </html>
